@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://xfb6gapngp5h"]
+
+[ext_resource type="Texture2D" uid="uid://dg3ynow13cjws" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_cwmwk"]
+[ext_resource type="PackedScene" uid="uid://cwq7icabdmffy" path="res://player/player.tscn" id="2_g4t0d"]
+[ext_resource type="PackedScene" uid="uid://cpd3pvw2tqt03" path="res://enemies/pawn.tscn" id="3_qaa0h"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(1819, 50)
+texture = ExtResource("1_cwmwk")
+
+[node name="Label" type="Label" parent="WarriorBlue"]
+offset_left = -584.0
+offset_top = -682.0
+offset_right = -546.0
+offset_bottom = -654.0
+text = "Idle"
+
+[node name="Player" parent="." instance=ExtResource("2_g4t0d")]
+position = Vector2(552, 262)
+
+[node name="Pawn" parent="." instance=ExtResource("3_qaa0h")]
+position = Vector2(211, 151)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_qaa0h")]
+position = Vector2(644, 472)
+
+[node name="Pawn3" parent="." instance=ExtResource("3_qaa0h")]
+position = Vector2(83, 530)
